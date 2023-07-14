@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <div class="header-left">
+          <div class="header-left-title">
+            <h3>Invoices</h3>
+          </div>
+        </div>
+        <div class="header-right">
+          <button class="secondary-btn icon-arrow">Export</button>
+          <button class="secondary-btn icon-plus">New</button>
+          <button class="secondary-btn icon-filter"></button>
+          <button class="secondary-btn icon-more"></button>
+        </div>
+      </section>
+      <div class="main-content">
+        <section class="grid-container">
+          <div class="grid-top-bar">
+            <div class="grid-top-bar-left">
+              <div class="grid-top-bar-left-title">Results per page</div>
+              <div class="grid-top-bar-left-content">
+                <select name="results" id="results">
+                  <option value="10">10</option>
+                  <option value="20" selected>20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid-top-bar-middle">
+              <div class="grid-top-bar-middle-content">
+                <span
+                  class="grid-top-bar-middle-content-arrow disabled-arrow"
+                ></span>
+                <span class="grid-top-bar-middle-content-text">1</span>
+                <span class="grid-top-bar-middle-content-arrow"></span>
+              </div>
+            </div>
+            <div class="grid-top-bar-right">
+              <div class="grid-top-bar-right-title">Page</div>
+              <div class="grid-top-bar-right-content">
+                <select name="results" id="results">
+                  <option value="10">10</option>
+                  <option value="20" selected>20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="grid-cell-row grid-cell-row-header">
+            <div class="grid-header has-toggle">
+              <input type="checkbox" name="toggleAll" value="toggleAll" />
+              <label for="toggleAll"></label>
+            </div>
+            <div class="grid-header">Type</div>
+            <div class="grid-header">Date</div>
+            <div class="grid-header">Customer</div>
+            <div class="grid-header">Location</div>
+            <div class="grid-header">State</div>
+            <div class="grid-header align-right">Total</div>
+            <div class="grid-header"></div>
+          </div>
+
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice2" value="invoice2" />
+              <label for="invoice2"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Lydia Diana</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-progress">IN PROGRESS</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">129.00 €</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice3" value="invoice3" />
+              <label for="invoice3"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Lydia Diana</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-pending">PENDING</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">4147.20 €</span>
+              <span class="danger">UNPAID 200.29€</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice4" value="invoice4" />
+              <label for="invoice4"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+              <span class="danger">DUE 2 DAYS AGO</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Lydia Diana</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-success">SUCCESS</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">129.00 €</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice4" value="invoice4" />
+              <label for="invoice4"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text"
+                >Sometimes name can be longer than just two rows - like this
+                name.</span
+              >
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-success">SUCCESS</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">123456789.20 €</span>
+              <span class="danger">UNPAID 12345678.29€</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice4" value="invoice4" />
+              <label for="invoice4"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+              <span class="danger">DUE 2 DAYS AGO</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text"
+                >Tatiana George Washington Lorem ipsum</span
+              >
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-progress">IN PROGRESS</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">12900.00 €</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice4" value="invoice4" />
+              <label for="invoice4"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+              <span class="danger">DUE 2 DAYS AGO</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Dulce Lipshutz</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-pending">PENDING</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">129.00 €</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+
+          <div class="grid-cell-row">
+            <div class="grid-cell">
+              <input type="checkbox" name="invoice4" value="invoice4" />
+              <label for="invoice4"></label>
+              <div class="cell-overlay"></div>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Receipt</span>
+              <span class="receipt-id">#1212121</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">21.10.2022</span>
+              <span class="danger">DUE 2 DAYS AGO</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Lydia Diana</span>
+            </div>
+            <div class="grid-cell">
+              <span class="cell-text">Estonia</span>
+            </div>
+            <div class="grid-cell">
+              <span class="status status-pending">COMPLETE</span>
+            </div>
+            <div class="grid-cell align-end">
+              <span class="cell-text">129.00 €</span>
+            </div>
+            <div class="grid-cell">
+              <span class="more"></span>
+            </div>
+          </div>
+        </section>
+        <aside class="grid-aside">
+          <div class="grid-aside-header">
+            <h3>Customers</h3>
+            <button class="secondary-btn icon-person">Add</button>
+          </div>
+          <div class="grid-aside-content">
+            <div class="grid-aside-letters">
+              <span>A</span>
+              <span>B</span>
+              <span>C</span>
+              <span>D</span>
+              <span>E</span>
+              <span>F</span>
+              <span>G</span>
+              <span>H</span>
+              <span>I</span>
+              <span>J</span>
+              <span>K</span>
+              <span>L</span>
+              <span>M</span>
+              <span>N</span>
+              <span>O</span>
+              <span>P</span>
+              <span>Q</span>
+              <span>R</span>
+              <span>S</span>
+              <span>T</span>
+              <span>U</span>
+              <span>V</span>
+              <span>W</span>
+              <span>X</span>
+              <span>Y</span>
+              <span>Z</span>
+            </div>
+            <div class="grid-aside-search">
+              <form action="">
+                <input type="text" />
+                <button>Search</button>
+              </form>
+              <div class="grid-aside-search-results">
+                <ul>
+                  <li>Marathon Oil Corp</li>
+                  <li>Sealed Air</li>
+                  <li>Southern Company</li>
+                  <li>Southwest Airlines</li>
+                  <li>Stanley Black & Decker</li>
+                  <li>Starbucks Corp</li>
+                  <li>State Street Corp</li>
+                  <li>Stryker Corp</li>
+                  <li>SunTrust Banks</li>
+                  <li>Symantec Corp</li>
+                  <li>Synchrony Financial</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-aside-add-customer">
+              <div class="grid-aside-add-customer-header">
+                <h3>Add customers</h3>
+                <div class="close-icon"></div>
+              </div>
+              <p>
+                You can add customers by pressing the Add + button in the corner
+                or by importing your clients from a CSV file
+              </p>
+              <button class="icon-cloud">Import customers</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
